@@ -1,0 +1,97 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    color: rgb(78, 74, 74);
+    background-color: #b794f2;
+}
+.navbar {
+    box-shadow: 0 3px 4px #6017ff;
+}
+.nav-link {
+    transition: 0.5s;
+}
+.nav-link:hover {
+    background-color: #b794f2;
+    border-radius: 50px;
+}
+.sticky-top {
+    position: fixed;
+    top: 0;
+    background-color: #6f2ff9;
+}
+h1 {
+    font-size: 270px;
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+    animation: slideIn 2s infinite;
+}
+.tangerine-bold {
+    font-family: "Tangerine", cursive;
+    font-weight: 700;
+    font-style: normal;
+}
+@keyframes slideIn {
+    0% {transform: translateX(-9%);}
+    25% {transform: translateX(0);}
+    50% {transform: translateX(9%);}
+    75% {transform: translateX(0);}
+    100% {transform: translateX(-9%);}
+}
+#nyoba {
+    position: absolute;
+    display: inline-block;
+    background-color: aqua;
+    border-top-right-radius: 100px;
+    border-top-left-radius: 100px;
+    height: 275px;
+    overflow: hidden;
+    white-space: nowrap;
+    z-index: 12;
+}
+.text {
+    padding: 10px 35px;
+    font-size: 20px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+.text-3 {
+    margin-top: -35px;
+}
+.text-4 {
+    margin-top: -30px;
+}
+.email {
+    font-size: 15px;
+}
+.text > span {
+    white-space: normal;
+}
+.icon-social {
+    background-color: #b794f2;
+    position: absolute;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 9px 35px;
+    height: 40px;
+}
+.icon-contact {
+    margin-right: 14px;
+    background-color: white;
+    border-radius: 100px;
+    display: flex;
+    justify-content: center;
+    transition: 0.5s;
+}
+.icon-contact:hover {
+    background-color: #6f2ff9;
+}
+@media only screen and (max-width:992px) {
+    h1 {
+        display: flex;
+        justify-content: center;
+        margin-left: 160px;
+    }
+}

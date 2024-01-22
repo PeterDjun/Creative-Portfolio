@@ -1,0 +1,245 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    color: rgb(78, 74, 74);
+    background-color: #b794f2;
+}
+@font-face {
+    font-family: MyFont;
+    src: url(Migra\ -\ Free\ for\ Personal\ Use/Migra);
+}
+.navbar {
+    box-shadow: 0 3px 4px #6017ff;
+}
+.nav-link {
+    transition: 0.5s;
+}
+.nav-link:hover {
+    background-color: #b794f2;
+    border-radius: 50px;
+}
+.sticky-top {
+    position: fixed;
+    top: 0;
+    background-color: #6f2ff9;
+}
+section {
+    padding: 64px 128px;
+}
+#about {
+    align-items: center;
+    justify-content: space-between;
+    column-gap: 16px;
+}
+#about > div {
+    width: 50%;
+}
+.foto {
+    margin-left: 150px;
+    border-radius: 50px;
+    width: 50%;
+}
+.detail {
+    margin-right: 50px;
+    padding-left: 32px;
+}
+h4 {
+    font-size: 40px;
+}
+p {
+    font-size: 18px;
+}
+h6 {
+    font-size: 18px;
+}
+#about-cont {
+    margin-top: 64px;
+    padding: 0;
+}
+#about-cont > .d-flex {
+    flex-direction: column;
+    justify-content: center;
+}
+.kata1 {
+    margin-left: 128px;
+}
+.h1 {
+    display: none;
+}
+.kata2 {
+    margin-top: 50px;
+    margin-right: -100px;
+}
+#about-cont3 {
+    flex-direction: column;
+}
+#about-cont3 > .row {
+    margin-top: 64px;
+}
+.skills {
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.skills > div {
+    border: 1px solid rgb(93, 93, 93);
+    border-radius: 200px;
+    margin: 8px;
+    padding: 9px 35px;
+}
+.judul {
+    display: flex;
+    justify-content: center;
+}
+.card {
+    margin-top: 64px;
+    /* border-radius: 50px; */
+}
+/* .card > img {
+    border-radius: 50px;
+} */
+.col-sm-6 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.img-sertif {
+    filter: grayscale(100%);
+    transition: 0.5s;
+}
+.img-sertif:hover {
+    filter: grayscale(0%);
+}
+#port-detail {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+#portfolio-cont {
+    margin-top: -100px;
+    margin-bottom: 50px;
+}
+.img-port {
+    filter: brightness(0);
+    transition: 0.5s;
+}
+.img-port:hover {
+    filter: brightness(1);
+}
+.col-sm-4 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+#nyoba > .container-fluid {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+/* .penghias {
+    animation: pulse 2s infinite;
+} */
+.nyoba {
+    margin-right: -25px;
+}
+.hiasan {
+    font-family: MyFont;
+    font-style: italic;
+    animation: pulse 2s infinite;
+}
+.kecil {
+    font-size: 50px;
+}
+.kecil-atas {
+    margin-bottom: -20px;
+}
+.besar {
+    font-size: 100px;
+}
+.besar-sekali {
+    font-size: 150px;
+    margin-top: -50px;
+}
+.sedang {
+    font-size: 75px;
+    margin-top: -30px;
+}
+@keyframes pulse {
+    0%, 100% {transform: scale(1);}
+    50% {transform: scale(1.2);}
+}
+.tombol-contact {
+    margin-top: 32px;
+    border-radius: 100px;
+    padding: 10px 35px;
+    background-color: #6f2ff9;
+    outline: 0;
+    border: none;
+    transition: 0.5s;
+}
+.tombol-contact:hover {
+    background-color: #b794f2;
+    color: black;
+    border: 1px solid #6f2ff9;
+    border-radius: 50px;
+}
+.atas-footer {
+    margin-left: 100px;
+}
+.icon-contact {
+    margin-right: 14px;
+}
+.link-contact {
+    width: 38px;
+    height: 38px;
+    position: relative;
+    background-color: #6f2ff9;
+    border-radius: 50%;
+    margin-bottom: 15px;
+    transition: 0.5s;
+}
+.link-contact:hover {
+    background-color: white;
+}
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 9px 35px;
+}
+@media only screen and (max-width:992px) {
+    #about {
+        display: flex;
+        flex-direction: column;
+    }
+    .foto {
+        width: 300px;
+        margin: 0 auto;
+    }
+    .sertif {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .img-sertif {
+        width: 300px;
+    }
+    #port-detail {
+        display: flex;
+        flex-direction: column;
+    }
+    .card-port {
+        width: 500px;
+    }
+}
+@media only screen and (max-width:840px) {
+    .sertif {
+        display: flex;
+        flex-direction: column;
+    }
+    .img-sertif {
+        width: 500px;
+    }
+}
