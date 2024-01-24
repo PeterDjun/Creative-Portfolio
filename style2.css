@@ -30,10 +30,13 @@ html, body {
     pointer-events: none;
     z-index: 20;
 }
+.judul {
+    text-align: center;
+}
 h1 {
-    font-size: 270px;
-    display: flex;
-    justify-content: center;
+    font-size: 250px;
+    display: inline-block;
+    overflow: hidden;
     margin-top: 100px;
     animation: slideIn 2s infinite;
 }
@@ -49,13 +52,16 @@ h1 {
     75% {transform: translateX(0);}
     100% {transform: translateX(-5%);}
 }
+.hp {
+    display: none;
+}
 #nyoba {
     position: absolute;
     display: inline-block;
     background-color: #c5b4eb;
     border-top-right-radius: 100px;
     border-top-left-radius: 100px;
-    height: 275px;
+    height: 295px;
     overflow: hidden;
     white-space: nowrap;
     z-index: 12;
@@ -81,12 +87,16 @@ h1 {
 .icon-social {
     background-color: #b794f2;
     position: absolute;
+    bottom: 0;
     left: 0;
-    display: flex;
     justify-content: center;
     align-items: center;
     padding: 9px 35px;
     height: 40px;
+}
+.wa {
+    width: 35px;
+    height: 35px;
 }
 .icon-contact {
     margin-right: 14px;
@@ -107,8 +117,33 @@ h1 {
     }
 }
 @media only screen and (max-width:620px) {
-    .tangerine-bold {
-        font-size: 65px;
+    .laptop {
+        display: none;
+    }
+    .hp {
+        display: inline-block;
+        font-size: 100px;
         margin-left: 0px;
+    }
+    #nyoba {
+        height: 515px;
+    }
+    .text {
+        text-align: center;
+        font-size: 28px;
+    }
+    .text-1 {
+        margin-top: 30px;
+        overflow: hidden;
+        /* display: flex;
+        flex-direction: column; */
+    }
+    .email {
+        font-size: 25px;
+    }
+    .icon-social {
+        position: fixed;
+        bottom: 0;
+        width: 100%;
     }
 }
