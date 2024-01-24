@@ -41,9 +41,6 @@ section {
     justify-content: space-between;
     column-gap: 16px;
 }
-#about > div {
-    width: 50%;
-}
 .foto {
     margin-left: 150px;
     border-radius: 50px;
@@ -253,8 +250,74 @@ h6 {
         width: 500px;
     }
 }
-@media only screen and (device-width:1080px), only screen and (max-width:420px) {
+@media only screen and (max-width:620px) {
     .foto {
-        margin: 0 auto;
+        width: 200px;
+    }
+    .detail {
+        margin-top: 60px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    .detail > h4 {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 300px;
+        height: 40px;
+    }
+    .para1 {
+        margin-top: 50px;
+    }
+    .kata1 {
+        margin-left: 35px;
+    }
+    .kata2 {
+        text-align: right;
+    }
+    .skills > div {
+        text-align: center;
+    }
+    .weakness {
+        margin-top: 40px;
+    }
+    .judul {
+        text-align: center;
+        margin-top: -20px;
+    }
+    .img-sertif {
+        width: 300px;
+    }
+    .tombol-contact {
+        text-align: center;
+        padding: 10px 55px;
+    }
+    .tombol-contact > span {
+        display: inline-block;
+        width: 150px;
+        height: 40px;
+        font-size: 20px;
+        margin-bottom: -7px;
+    }
+    .atas-footer {
+        justify-content: center;
+        align-items: center;
+        margin-left: 20px;
+    }
+    .hiasan > h1 {
+        font-size: 200%;
+    }
+    .kecil {
+        font-size: 30px;
+    }
+    .besar-sekali, .sedang {
+        margin-top: 0.1px;
+    }
+    .besar {
+        margin-top: 10px;
+        font-size: 100px;
+        margin-left: -10px;
     }
 }
