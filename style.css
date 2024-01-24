@@ -250,7 +250,7 @@ h6 {
         width: 500px;
     }
 }
-@media only screen and (max-width:620px) {
+@media only screen and (max-width:620px), only screen and (max-height:740px) {
     .foto {
         width: 200px;
     }
@@ -317,7 +317,7 @@ h6 {
         margin-left: -10px;
     }
     .hiasan-atas {
-        margin-left: -55px;
+        margin-left: -50px;
     }
     .hiasan > h1 {
         font-size: 200%;
@@ -326,7 +326,7 @@ h6 {
         font-size: 30px;
     }
     .kecil-bawah {
-        margin-top: 25px;
+        margin-top: 20px;
     }
     .besar-sekali, .sedang {
         margin-top: 0.1px;
