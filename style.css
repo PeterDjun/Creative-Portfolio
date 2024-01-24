@@ -290,6 +290,13 @@ h6 {
     .img-sertif {
         width: 300px;
     }
+    .card-end {
+        justify-content: center;
+        align-items: center;
+        margin-left: -73px;
+        width: 300px;
+        height: 235px;
+    }
     .tombol-contact {
         text-align: center;
         padding: 10px 55px;
@@ -310,7 +317,7 @@ h6 {
         margin-left: -10px;
     }
     .hiasan-atas {
-        margin-left: -65px;
+        margin-left: -55px;
     }
     .hiasan > h1 {
         font-size: 200%;
@@ -319,7 +326,7 @@ h6 {
         font-size: 30px;
     }
     .kecil-bawah {
-        margin-top: 30px;
+        margin-top: 25px;
     }
     .besar-sekali, .sedang {
         margin-top: 0.1px;
