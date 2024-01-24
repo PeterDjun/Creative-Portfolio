@@ -306,14 +306,26 @@ h6 {
         align-items: center;
         margin-left: 20px;
     }
+    #nyoba {
+        margin-left: -10px;
+    }
+    .hiasan-atas {
+        margin-left: -45px;
+    }
     .hiasan > h1 {
         font-size: 200%;
     }
     .kecil {
         font-size: 30px;
     }
+    .kecil-bawah {
+        margin-top: 15px;
+    }
     .besar-sekali, .sedang {
         margin-top: 0.1px;
+    }
+    .sedang {
+        margin-left: -15px;
     }
     .besar {
         margin-top: 10px;
