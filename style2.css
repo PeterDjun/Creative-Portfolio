@@ -3,6 +3,8 @@ html, body {
     padding: 0;
     color: rgb(78, 74, 74);
     background-color: #b794f2;
+    max-width: 100%;
+    overflow-y: hidden;
 }
 .navbar {
     box-shadow: 0 3px 4px #6017ff;
@@ -126,17 +128,21 @@ h1 {
         margin-left: 0px;
     }
     #nyoba {
-        height: 515px;
+        height: 500px;
     }
     .text {
         text-align: center;
         font-size: 25px;
     }
     .text-1 {
-        margin-top: 30px;
+        margin-top: 40px;
         overflow: hidden;
-        /* display: flex;
-        flex-direction: column; */
+    }
+    .text-5 {
+        margin-top: 35px;
+    }
+    .text-2 {
+        margin-top: 35px;
     }
     .email {
         font-size: 25px;
