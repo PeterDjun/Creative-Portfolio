@@ -108,6 +108,7 @@ h6 {
     border-radius: 200px;
     margin: 8px;
     padding: 9px 35px;
+    text-align: center;
 }
 .judul {
     display: flex;
@@ -201,7 +202,9 @@ h6 {
     transition: 0.5s;
 }
 #tombol-github2:hover {
-    background-color: #bec0c2;
+    background-color: rgb(0, 45, 98);
+    border: 1px solid #ffc526;
+    color: #ffc526;
 }
 .tombol-contact {
     margin-top: 32px;
@@ -214,9 +217,9 @@ h6 {
     transition: 0.5s;
 }
 .tombol-contact:hover {
-    background-color: #bec0c2;
+    background-color: #ffc526;
     color: rgb(0, 45, 98);
-    border: 1px solid #ffc526;
+    border: 1px solid rgb(0, 45, 98);
     border-radius: 50px;
 }
 .atas-footer {
@@ -235,7 +238,8 @@ h6 {
     transition: 0.5s;
 }
 .link-contact:hover {
-    background-color: #bec0c2;
+    background-color: #ffc526;
+    border: 1px solid rgb(0, 45, 98);
 }
 .footer {
     display: flex;
@@ -364,8 +368,5 @@ h6 {
         margin-top: 10px;
         font-size: 100px;
         margin-left: -10px;
-    }
-    #tombol-github {
-        margin-left: 23px;
     }
 }
