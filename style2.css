@@ -125,7 +125,8 @@ h1 {
     transition: 0.5s;
 }
 .icon-contact:hover {
-    background-color: #bec0c2;
+    background-color: #ffc526;
+    border: 1px solid rgb(0, 45, 98);
 }
 @media only screen and (max-width:992px) {
     h1 {
