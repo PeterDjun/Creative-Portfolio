@@ -1,25 +1,40 @@
 html, body {
     margin: 0;
     padding: 0;
-    color: rgb(78, 74, 74);
-    background-color: #b794f2;
+    color: rgb(0, 45, 98);
+    background-color: #ffc526;
     max-width: 100%;
     overflow-y: hidden;
 }
 .navbar {
-    box-shadow: 0 3px 4px #6017ff;
+    box-shadow: 0 3px 4px rgb(0, 45, 98);
+}
+.navbar-brand {
+    color: #ffc526;
+    transition: 0.5s;
+}
+.navbar-brand:hover {
+    background-color: #ffc526;
+    border-radius: 10px;
+    color: rgb(0, 45, 98);
 }
 .nav-link {
     transition: 0.5s;
 }
+#link-nav {
+    color: #ffc526;
+}
 .nav-link:hover {
-    background-color: #b794f2;
+    background-color: #ffc526;
     border-radius: 50px;
+}
+#link-nav:hover {
+    color: rgb(0, 45, 98);
 }
 .sticky-top {
     position: fixed;
     top: 0;
-    background-color: #6f2ff9;
+    background-color: rgb(0, 45, 98);;
 }
 .circle {
     height: 24px;
@@ -60,7 +75,8 @@ h1 {
 #nyoba {
     position: absolute;
     display: inline-block;
-    background-color: #c5b4eb;
+    background-color: rgb(0, 45, 98);
+    color: #ffc526;
     border-top-right-radius: 100px;
     border-top-left-radius: 100px;
     height: 295px;
@@ -87,7 +103,7 @@ h1 {
     white-space: normal;
 }
 .icon-social {
-    background-color: #b794f2;
+    background-color: #ffc526;
     position: absolute;
     bottom: 0;
     left: 0;
@@ -102,14 +118,14 @@ h1 {
 }
 .icon-contact {
     margin-right: 14px;
-    background-color: white;
+    background-color: rgb(0, 45, 98);
     border-radius: 100px;
     display: flex;
     justify-content: center;
     transition: 0.5s;
 }
 .icon-contact:hover {
-    background-color: #6f2ff9;
+    background-color: #bec0c2;
 }
 @media only screen and (max-width:992px) {
     h1 {
