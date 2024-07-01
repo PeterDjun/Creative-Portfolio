@@ -38,8 +38,57 @@ html, body {
     top: 0;
     background-color: rgb(0, 45, 98);
 }
+#pertama {
+    padding: 0;
+    display: flex;
+    height: 80vh;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
 section {
     padding: 64px 128px;
+}
+.slider {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: #ffc526;
+    z-index: -1;
+}
+.awal {
+    height: 60%;
+    width: 100%;
+    position: relative;
+}
+.awal img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.headline {
+    position: absolute;
+    top: 70%;
+    left: 14%;
+    font-size: 80px;
+    transform: translate(280%, -60%);
+    color: #ffc526;
+    z-index: 2;
+}
+.awal::after {
+    content: "";
+    background: rgb(0, 45, 98);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0.5;
+}
+.para1 {
+    text-align: justify;
 }
 .circle {
     height: 24px;
@@ -83,7 +132,7 @@ h6 {
     justify-content: center;
 }
 .kata1 {
-    margin-left: 128px;
+    margin-left: 40px;
 }
 .h1 {
     display: none;
