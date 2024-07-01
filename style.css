@@ -73,9 +73,10 @@ section {
     top: 70%;
     left: 14%;
     font-size: 80px;
-    transform: translate(280%, -60%);
+    transform: translate(290%, -50%);
     color: #ffc526;
     z-index: 2;
+    font-family: "Times New Roman", Times, serif;
 }
 .awal::after {
     content: "";
