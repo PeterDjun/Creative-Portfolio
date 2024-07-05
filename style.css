@@ -334,12 +334,6 @@ h6 {
         width: 100%;
         height: 100%;
     }
-    /* .awal::after {
-        margin-top: 437px;
-        bottom: auto;
-        height: 29%;
-        display: none;
-    } */
     .headline {
         top: 50%;
         left: 50%;
@@ -496,5 +490,10 @@ h6 {
     .sedang {
         font-size: 45px;
         margin-left: -15px;
+    }
+}
+@media only screen and (max-width:350px) {
+    .headline {
+        font-size: 65px;
     }
 }
