@@ -3,6 +3,7 @@ html, body {
     padding: 0;
     color: rgb(0, 45, 98);
     background-color: #ffc526;
+    overflow-x: hidden;
 }
 @font-face {
     font-family: MyFont;
@@ -45,6 +46,8 @@ html, body {
     justify-content: center;
     align-items: center;
     margin-top: 50px;
+    overflow: hidden;
+    width: 100%;
 }
 section {
     padding: 64px 128px;
@@ -62,11 +65,20 @@ section {
     height: 60%;
     width: 100%;
     position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .awal img {
-    width: 100%;
-    height: 100%;
+    max-width: 100%;
+    height: auto;
     object-fit: cover;
+    display: block; 
+    position: relative;
+}
+#hp {
+    display: none;
 }
 .headline {
     position: absolute;
@@ -75,7 +87,7 @@ section {
     font-size: 80px;
     transform: translate(290%, -50%);
     color: #ffc526;
-    z-index: 2;
+    z-index: 3;
     font-family: "Times New Roman", Times, serif;
 }
 .awal::after {
@@ -85,8 +97,12 @@ section {
     height: 100%;
     position: absolute;
     left: 0;
+    right: 0;
     top: 0;
+    bottom: 0;
     opacity: 0.5;
+    pointer-events: none;
+    z-index: 1;
 }
 .para1 {
     text-align: justify;
@@ -299,6 +315,38 @@ h6 {
     padding: 9px 35px;
 }
 @media only screen and (max-width:992px) {
+    .awal {
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .awal > img {
+        width: 100%;
+        height: auto;
+        margin: auto;
+    }
+    #laptop {
+        display: none;
+    }
+    #hp {
+        display: flex;
+        width: 100%;
+        height: 100%;
+    }
+    /* .awal::after {
+        margin-top: 437px;
+        bottom: auto;
+        height: 29%;
+        display: none;
+    } */
+    .headline {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -90%);
+        font-size: 100px;
+        font-weight: 900;
+    }
     #about {
         display: flex;
         flex-direction: column;
@@ -306,6 +354,8 @@ h6 {
     .foto {
         width: 300px;
         margin: 0 auto;
+        margin-top: -20px;
+        margin-bottom: 40px;
     }
     .sertif {
         display: flex;
@@ -322,8 +372,31 @@ h6 {
     .card-port {
         width: 500px;
     }
+    .kecil {
+        font-size: 40px;
+        margin-top: 5px;
+    }
+    .besar {
+        font-size: 80px;
+    }
+    .hiasan-atas {
+        margin-bottom: 25px;
+    }
+    .besar-sekali {
+        font-size: 80px;
+    }
+    .sedang {
+        font-size: 80px;
+    }
 }
 @media only screen and (max-width:840px) {
+    .awal {
+        height: auto;
+    }
+    .awal > img {
+        width: 100%;
+        height: auto;
+    }
     .sertif {
         display: flex;
         flex-direction: column;
@@ -333,6 +406,9 @@ h6 {
     }
 }
 @media only screen and (max-width:620px) {
+    .awal {
+        height: 20%;
+    }
     .foto {
         width: 200px;
     }
@@ -372,10 +448,15 @@ h6 {
     .img-sertif {
         width: 300px;
     }
+    #portfolio-cont {
+        margin-bottom: -60px;
+    }
     .card-end {
         justify-content: center;
         align-items: center;
-        margin-left: -98px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-10%);
         width: 300px;
     }
     .tombol-contact {
@@ -400,24 +481,20 @@ h6 {
     .hiasan-atas {
         margin-left: -48px;
     }
-    .hiasan > h1 {
-        font-size: 200%;
-    }
     .kecil {
         font-size: 30px;
     }
-    .kecil-bawah {
-        margin-top: 15px;
+    .besar {
+        font-size: 45px;
+        margin-top: 9px;
+        margin-bottom: 25px;
     }
-    .besar-sekali, .sedang {
-        margin-top: 0.1px;
+    .besar-sekali {
+        font-size: 55px;
+        margin-bottom: 25px;
     }
     .sedang {
+        font-size: 45px;
         margin-left: -15px;
-    }
-    .besar {
-        margin-top: 10px;
-        font-size: 100px;
-        margin-left: -10px;
     }
 }
