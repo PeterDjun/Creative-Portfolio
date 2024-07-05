@@ -338,7 +338,7 @@ h6 {
         top: 50%;
         left: 50%;
         transform: translate(-50%, -90%);
-        font-size: 100px;
+        font-size: 85px;
         font-weight: 900;
     }
     #about {
@@ -490,10 +490,5 @@ h6 {
     .sedang {
         font-size: 45px;
         margin-left: -15px;
-    }
-}
-@media only screen and (max-width:450px) {
-    .headline {
-        font-size: 65px;
     }
 }
