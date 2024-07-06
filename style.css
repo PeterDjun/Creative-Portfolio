@@ -4,6 +4,7 @@ html, body {
     color: rgb(0, 45, 98);
     background-color: #ffc526;
     overflow-x: hidden;
+    box-sizing: border-box;
 }
 @font-face {
     font-family: MyFont;
@@ -127,10 +128,6 @@ section {
     border-radius: 50px;
     width: 50%;
 }
-.detail {
-    margin-right: 50px;
-    padding-left: 32px;
-}
 h4 {
     font-size: 40px;
 }
@@ -143,20 +140,54 @@ h6 {
 #about-cont {
     margin-top: 64px;
     padding: 0;
+    justify-content: space-between;
 }
-#about-cont > .d-flex {
-    flex-direction: column;
-    justify-content: center;
+.about-kata {
+    flex: 1;
+    max-width: 50%;
+    padding: 0 20px;
+    box-sizing: border-box;
 }
 .kata1 {
+    width: 100%;
     margin-left: 40px;
+    box-sizing: border-box;
 }
-.h1 {
-    display: none;
+.about-gambar {
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+}
+.gambar1 {
+    height: auto;
+    margin-bottom: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+#about-cont2 {
+    margin-top: 128px;
+    padding: 0;
+    justify-content: space-between;
+    margin-bottom: 100px;
+}
+.gambar2 {
+    height: 180%;
+    margin-bottom: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50px;
+    opacity: 0.7;
 }
 .kata2 {
+    font-size: 20px;
     margin-top: 50px;
-    margin-right: -100px;
+    margin-right: 40px;
     text-align: right;
 }
 #about-cont3 {
@@ -180,6 +211,8 @@ h6 {
 .judul {
     display: flex;
     justify-content: center;
+    font-size: 40px;
+    font-weight: 500;
 }
 .card {
     margin-top: 64px;
@@ -351,6 +384,32 @@ h6 {
         margin-top: -20px;
         margin-bottom: 40px;
     }
+    .para1 {
+        text-align: center;
+    }
+    .gambar1 {
+        display: none;
+    }
+    .about-gambar {
+        display: none;
+    }
+    .about-kata {
+        max-width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+    }
+    .kata1 {
+        text-align: center;
+        width: 100%;
+        margin: 0;
+    }
+    .kata2 {
+        text-align: center;
+        width: 100%;
+        margin: 0;
+    }
     .sertif {
         display: flex;
         justify-content: space-evenly;
@@ -423,12 +482,6 @@ h6 {
     .para1 {
         margin-top: 50px;
     }
-    .kata1 {
-        margin-left: 35px;
-    }
-    .kata2 {
-        text-align: right;
-    }
     .skills > div {
         text-align: center;
     }
@@ -479,12 +532,12 @@ h6 {
         font-size: 30px;
     }
     .besar {
-        font-size: 45px;
-        margin-top: 9px;
-        margin-bottom: 25px;
+        font-size: 39px;
+        margin-top: 15px;
+        margin-bottom: 33px;
     }
     .besar-sekali {
-        font-size: 55px;
+        font-size: 50px;
         margin-bottom: 25px;
     }
     .sedang {

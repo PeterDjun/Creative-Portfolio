@@ -72,9 +72,30 @@ const awal = document.querySelector(".awal");
 const slider = document.querySelector(".slider");
 const headline = document.querySelector(".headline");
 
-
 const tl = new TimelineMax();
 
 tl.fromTo(awal, 1, { height: "0%" }, { height: "80%", ease: Power2.easeInOut})
 .fromTo(awal, 1.2, {width: "100%"}, {width: "80%", ease: Power2.easeInOut})
 .fromTo(slider, 1.2, {x: "-100%"}, {x: "0%", ease: Power2.easeInOut}, "-=1.2")
+
+// new fullpage("#fullpage", {
+//     autoScrolling: true,
+//     navigation: true,
+//     onLeave: (origin, destination, direction) => {
+//         const section = destination.item;
+//         const judul = section.querySelector(".judul");
+//         const tl = new TimelineMax({delay:0.5});
+//         tl.fromTo(judul, 0.5, {y: "50", opacity: 0}, {y: 0, opacity: 1});
+
+//         if (destination.index === 1) {
+//             const gambar1 = document.querySelector(".gambar1");
+//             const aboutkata = document.querySelector (".about-kata");
+
+//             tl.fromTo(gambar1, 0.7, {x: "100%"}, {x: "-35%"})
+//             .fromTo(aboutkata, 0.5, {y: "50", opacity: 0}, {y: 0, opacity: 1})
+//             .fromTo(gambar1[0], 1, {opacity: 1}, {opacity: 1})
+//             .fromTo(gambar1[1], 1, {opacity: 0}, {opacity: 1})
+//             .fromTo(gambar1[2], 1, {opacity: 0}, {opacity: 1});
+//         }
+//     }
+// })
